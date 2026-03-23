@@ -11,7 +11,28 @@ Pass the value for number of iterations and print the numbers.
 End the program.
 
 # PROGRAM:
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main() {
+int i, n;
+srand(time(0));
+printf("Enter how many pseudorandom numbers you want to generate");
+scanf("%d", &n);
+printf("Generating %d pseudorandom numbers between 0 and 99:\n", n);
+for (i = 0; i < n; i++) {
+int randomNumber = rand() % 100;
+printf("%d ", randomNumber);
+}
+printf("\n");
+return 0;
+}
 
+```
 # OUTPUT:
+<img width="1299" height="574" alt="image" src="https://github.com/user-attachments/assets/296f396a-3ada-4902-a859-141b2373acac" />
 
 # RESULT:
+
+The program is executed successfully
